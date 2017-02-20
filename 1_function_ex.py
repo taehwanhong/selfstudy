@@ -28,7 +28,7 @@ count = int(input("몇번?"))
 # 프린트스트링 함수에 입력하여 print
 print(print_string(text,count))
 
-# 가변매개변수 활용 *를 사용하면 튜플로 변수 설햣 
+# 가변매개변수 활용 *를 사용하면 튜플로 변수 설햣
 def merge_string(*text_list):
     result = ''
     for s in text_list:
@@ -40,3 +40,12 @@ b = "bbb"
 c = "ccc"
 # a, b, c 변수의 값을 merge string함수에 반영하여 출력
 print(merge_string(a,b,c))
+
+# 가변매개변수 활용 *를 사용하면 튜플로 변수 설햣
+def merge_string(**players):
+    for k in players:
+        print('{0} = {1}'.format(k,players[k]))
+
+# a, b, c 변수의 값을 merge string함수에 반영하여 출력
+print(merge_string(a,b,c))
+
